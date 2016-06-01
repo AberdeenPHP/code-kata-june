@@ -9,7 +9,7 @@ class PrimeFactors {
 	public function generate($number)
 	
 	{
-        return[];
+        return [];
 	}
 
 }
