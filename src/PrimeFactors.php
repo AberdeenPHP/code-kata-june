@@ -7,7 +7,9 @@ class PrimeFactors {
 	 * @return array
 	 */
 	public function generate($number)
+	
 	{
+        return[];
 	}
 
 }
