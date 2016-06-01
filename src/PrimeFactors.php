@@ -9,21 +9,17 @@ class PrimeFactors
      */
     public function generate($number)
     {
-        if ($number == 4)
+
+        $primes = [];
+        for ($candidate = 2; $number > 1; $candidate++)
         {
-            return [2, 2];
+            for (; !($number % $candidate); $number /= $candidate)
+            {
+                $primes[] = $candidate;
+            }
         }
 
-        if ($number > 4)
-        {
-            return [5];
-        }
-        if ($number > 1)
-        {
-            return [2];
-        }
-
-        return [];
+        return $primes;
     }
 
 }
