@@ -13,17 +13,19 @@ class PrimeFactors {
         
         $i=2;
         
-     while($i<$number){   
+        while($i<$number){   
         
-        while ($number % $i == 0){
+            while ($number % $i == 0){
         
-            $primes[]=$i;
+                $primes[]=$i;
             
-            $number /= $i;
-        }
+                $number /= $i;
+            
+            }
 	
-	$i++;
-	}
+        $i++;
+        
+        }
 	
         if ($number > 1) {
             $primes[] = $number;
