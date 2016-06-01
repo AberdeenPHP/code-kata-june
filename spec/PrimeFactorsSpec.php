@@ -23,5 +23,23 @@ class PrimeFactorsSpec extends ObjectBehavior {
     function it_returns_5_for_5(){
         $this->generate(5)->shouldReturn([5]);
     }
-  
+    
+    function it_returns_3_3_for_9(){
+    
+        $this->generate(9)->shouldReturn([3,3]);
+    }
+     function it_returns_11_for_11(){
+    
+        $this->generate(11)->shouldReturn([11]);
+    }
+
+     function it_returns_5_11_for_55(){
+    
+        $this->generate(55)->shouldReturn([5,11]);
+    }
+    
+     function it_returns_7_19_for_133(){
+    
+        $this->generate(133)->shouldReturn([7,19]);
+    }
   }
