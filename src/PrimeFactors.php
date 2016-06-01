@@ -1,14 +1,24 @@
 <?php
 
-class PrimeFactors {
+class PrimeFactors
+{
 
-	/**
-	 * @param $number
-	 * @return array
-	 */
-	public function generate($number)
-	{
-		return [];
-	}
+    /**
+     * @param $number
+     * @return array
+     */
+    public function generate($number)
+    {
+        if ($number > 4)
+        {
+            return [5];
+        }
+        if ($number > 1)
+        {
+            return [2];
+        }
+
+        return [];
+    }
 
 }
